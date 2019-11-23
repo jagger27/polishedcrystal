@@ -22,6 +22,7 @@ ItemIconPointers:
 	dw HealBallIcon
 	dw QuickBallIcon
 	dw DuskBallIcon
+	dw DreamBallIcon
 	dw PremierBallIcon
 	dw CherishBallIcon
 	dw PotionIcon
@@ -55,6 +56,7 @@ ItemIconPointers:
 	dw LemonadeIcon
 	dw MoomooMilkIcon
 	dw RageCandyBarIcon
+	dw PewterCrunchIcon
 	dw SacredAshIcon
 	dw EnergyPowderIcon
 	dw EnergyRootIcon
@@ -84,36 +86,7 @@ ItemIconPointers:
 	dw ShinyStoneIcon
 	dw IceStoneIcon
 	dw EverstoneIcon
-	dw BicycleIcon
-	dw OldRodIcon
-	dw GoodRodIcon
-	dw SuperRodIcon
-	dw CoinCaseIcon
-	dw ItemfinderIcon
 	dw ExpShareIcon
-	dw MysteryEggIcon
-	dw SquirtBottleIcon
-	dw SecretPotionIcon
-	dw RedScaleIcon
-	dw CardKeyIcon
-	dw BasementKeyIcon
-	dw SSTicketIcon
-	dw PassIcon
-	dw MachinePartIcon
-	dw LostItemIcon
-	dw RainbowWingIcon
-	dw SilverWingIcon
-	dw ClearBellIcon
-	dw GSBallIcon
-	dw BlueCardIcon
-	dw OrangeTicketIcon
-	dw MysticTicketIcon
-	dw OldSeaMapIcon
-	dw ShinyCharmIcon
-	dw OvalCharmIcon
-	dw SilphScope2Icon
-	dw ApricornBoxIcon
-	dw NoItemIcon
 	dw CheriBerryIcon
 	dw ChestoBerryIcon
 	dw PechaBerryIcon
@@ -134,7 +107,7 @@ ItemIconPointers:
 	dw RowapBerryIcon
 	dw KeeBerryIcon
 	dw MarangaBerryIcon
-	dw PewterCrunchIcon
+	dw BerryJuiceIcon
 	dw SilkScarfIcon
 	dw BlackBeltIcon
 	dw SharpBeakIcon
@@ -193,6 +166,12 @@ ItemIconPointers:
 	dw WeakPolicyIcon
 	dw WideLensIcon
 	dw WiseGlassesIcon
+	dw EjectPackIcon
+	dw RoomServiceIcon
+	dw BlundrPolicyIcon
+	dw ThroatSprayIcon
+	dw HeavyBootsIcon
+	dw UtilUmbrellaIcon
 	dw ZoomLensIcon
 	dw MentalHerbIcon
 	dw PowerHerbIcon
@@ -244,6 +223,7 @@ ItemIconPointers:
 	dw OldAmberIcon
 	dw MulchIcon
 	dw SweetHoneyIcon
+	dw MintIcon
 	dw FlowerMailIcon
 	dw SurfMailIcon
 	dw LiteBlueMailIcon
@@ -254,4 +234,34 @@ ItemIconPointers:
 	dw BlueSkyMailIcon
 	dw MusicMailIcon
 	dw MirageMailIcon
-	dw NoItemIcon
+
+KeyItemIconPointers:
+	dw BicycleIcon
+	dw OldRodIcon
+	dw GoodRodIcon
+	dw SuperRodIcon
+	dw CoinCaseIcon
+	dw ItemfinderIcon
+	dw MysteryEggIcon
+	dw SquirtBottleIcon
+	dw SecretPotionIcon
+	dw RedScaleIcon
+	dw CardKeyIcon
+	dw BasementKeyIcon
+	dw SSTicketIcon
+	dw PassIcon
+	dw MachinePartIcon
+	dw LostItemIcon
+	dw RainbowWingIcon
+	dw SilverWingIcon
+	dw ClearBellIcon
+	dw GSBallIcon
+	dw BlueCardIcon
+	dw OrangeTicketIcon
+	dw MysticTicketIcon
+	dw OldSeaMapIcon
+	dw ShinyCharmIcon
+	dw OvalCharmIcon
+	dw CatchCharmIcon
+	dw SilphScope2Icon
+	dw ApricornBoxIcon

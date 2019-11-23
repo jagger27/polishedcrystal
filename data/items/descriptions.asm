@@ -21,6 +21,7 @@ ItemDescriptions:
 	dw HealBallDesc
 	dw QuickBallDesc
 	dw DuskBallDesc
+	dw DreamBallDesc
 	dw PremierBallDesc
 	dw CherishBallDesc
 	dw PotionDesc
@@ -54,6 +55,7 @@ ItemDescriptions:
 	dw LemonadeDesc
 	dw MoomooMilkDesc
 	dw RageCandyBarDesc
+	dw PewterCrunchDesc
 	dw SacredAshDesc
 	dw EnergyPowderDesc
 	dw EnergyRootDesc
@@ -83,36 +85,7 @@ ItemDescriptions:
 	dw ShinyStoneDesc
 	dw IceStoneDesc
 	dw EverstoneDesc
-	dw BicycleDesc
-	dw OldRodDesc
-	dw GoodRodDesc
-	dw SuperRodDesc
-	dw CoinCaseDesc
-	dw ItemfinderDesc
 	dw ExpShareDesc
-	dw MysteryEggDesc
-	dw SquirtBottleDesc
-	dw SecretPotionDesc
-	dw RedScaleDesc
-	dw CardKeyDesc
-	dw BasementKeyDesc
-	dw SSTicketDesc
-	dw PassDesc
-	dw MachinePartDesc
-	dw LostItemDesc
-	dw RainbowWingDesc
-	dw SilverWingDesc
-	dw ClearBellDesc
-	dw GSBallDesc
-	dw BlueCardDesc
-	dw OrangeTicketDesc
-	dw MysticTicketDesc
-	dw OldSeaMapDesc
-	dw ShinyCharmDesc
-	dw OvalCharmDesc
-	dw SilphScope2Desc
-	dw ApricornBoxDesc
-	dw TeruSamaDesc
 	dw CheriBerryDesc
 	dw ChestoBerryDesc
 	dw PechaBerryDesc
@@ -133,7 +106,7 @@ ItemDescriptions:
 	dw RowapBerryDesc
 	dw KeeBerryDesc
 	dw MarangaBerryDesc
-	dw PewterCrunchDesc
+	dw BerryJuiceDesc
 	dw SilkScarfDesc
 	dw BlackBeltDesc
 	dw SharpBeakDesc
@@ -192,6 +165,12 @@ ItemDescriptions:
 	dw WeakPolicyDesc
 	dw WideLensDesc
 	dw WiseGlassesDesc
+	dw EjectPackDesc
+	dw RoomServiceDesc
+	dw BlundrPolicyDesc
+	dw ThroatSprayDesc
+	dw HeavyBootsDesc
+	dw UtilUmbrellaDesc
 	dw ZoomLensDesc
 	dw MentalHerbDesc
 	dw PowerHerbDesc
@@ -243,6 +222,7 @@ ItemDescriptions:
 	dw OldAmberDesc
 	dw MulchDesc
 	dw SweetHoneyDesc
+	dw MintDesc
 	dw FlowerMailDesc
 	dw SurfMailDesc
 	dw LiteBlueMailDesc
@@ -253,8 +233,38 @@ ItemDescriptions:
 	dw BlueSkyMailDesc
 	dw MusicMailDesc
 	dw MirageMailDesc
-	dw TeruSamaDesc
-	dw TeruSamaDesc
+
+KeyItemDescriptions:
+	dw BicycleDesc
+	dw OldRodDesc
+	dw GoodRodDesc
+	dw SuperRodDesc
+	dw CoinCaseDesc
+	dw ItemfinderDesc
+	dw MysteryEggDesc
+	dw SquirtBottleDesc
+	dw SecretPotionDesc
+	dw RedScaleDesc
+	dw CardKeyDesc
+	dw BasementKeyDesc
+	dw SSTicketDesc
+	dw PassDesc
+	dw MachinePartDesc
+	dw LostItemDesc
+	dw RainbowWingDesc
+	dw SilverWingDesc
+	dw ClearBellDesc
+	dw GSBallDesc
+	dw BlueCardDesc
+	dw OrangeTicketDesc
+	dw MysticTicketDesc
+	dw OldSeaMapDesc
+	dw ShinyCharmDesc
+	dw OvalCharmDesc
+	dw CatchCharmDesc
+	dw SilphScope2Desc
+	dw ApricornBoxDesc
+
 
 PokeBallDesc:
 	db   "An item for catch-"
@@ -343,6 +353,10 @@ QuickBallDesc:
 DuskBallDesc:
 	db   "A Ball for night-"
 	next "time or caves.@"
+
+DreamBallDesc:
+	db   "A Ball for sleep-"
+	next "ing #mon.@"
 
 PremierBallDesc:
 	db   "A rare commemor-"
@@ -566,117 +580,9 @@ EverstoneDesc:
 	db   "Stops evolution."
 	next "(Hold)@"
 
-BicycleDesc:
-	db   "A collapsible bike"
-	next "for fast movement.@"
-
-OldRodDesc:
-	db   "Use by water to"
-	next "fish for #mon.@"
-
-GoodRodDesc:
-	db   "A good Rod for"
-	next "catching #mon.@"
-
-SuperRodDesc:
-	db   "The best Rod for"
-	next "catching #mon.@"
-
-CoinCaseDesc:
-	db   "Holds up to 50K"
-	next "game coins.@"
-
-ItemfinderDesc:
-	db   "Checks for unseen"
-	next "items in the area.@"
-
 ExpShareDesc:
 	db   "Shares battle Exp."
 	next "Points. (Hold)@"
-
-MysteryEggDesc:
-	db   "An Egg obtained"
-	next "from Mr.#mon.@"
-
-SquirtBottleDesc:
-	db   "A bottle used for"
-	next "watering plants.@"
-
-SecretPotionDesc:
-	db   "Fully heals any"
-	next "#mon.@"
-
-RedScaleDesc:
-	db   "A scale from the"
-	next "red Gyarados.@"
-
-CardKeyDesc:
-	db   "Opens shutters in"
-	next "the Radio Tower.@"
-
-BasementKeyDesc:
-	db   "Opens doors.@"
-
-SSTicketDesc:
-	db   "A ticket for the"
-	next "S.S.Aqua.@"
-
-PassDesc:
-	db   "A ticket for the"
-	next "Magnet Train.@"
-
-MachinePartDesc:
-	db   "A machine part for"
-	next "the Power Plant.@"
-
-LostItemDesc:
-	db   "The # Doll lost"
-	next "by the Copycat.@"
-
-RainbowWingDesc:
-	db   "A mystical feather"
-	next "of rainbow colors.@"
-
-SilverWingDesc:
-	db   "A strange, silver-"
-	next "colored feather.@"
-
-ClearBellDesc:
-	db   "Makes a gentle"
-	next "ringing.@"
-
-GSBallDesc:
-	db   "The mysterious"
-	next "Ball.@"
-
-BlueCardDesc:
-	db   "Card to save"
-	next "points.@"
-
-OrangeTicketDesc:
-MysticTicketDesc:
-	db   "A ticket for the"
-	next "Seagallop Ferry.@"
-
-OldSeaMapDesc:
-	db   "A faded sea chart"
-	next "of a small island.@"
-
-ShinyCharmDesc:
-	db   "A charm for find-"
-	next "ing shiny #mon.@"
-
-OvalCharmDesc:
-	db   "A charm for find-"
-	next "ing Eggs.@"
-
-SilphScope2Desc:
-	db   "A scope to see in-"
-	next "visible #mon.@"
-
-ApricornBoxDesc:
-	db   "Holds up to 99 of"
-	next "each Apricorn.@"
 
 CheriBerryDesc:
 	db   "A self-cure for"
@@ -1229,5 +1135,124 @@ MirageMailDesc:
 	db   "Mew-print Mail."
 	next "(Hold)@"
 
-TeruSamaDesc:
+EjectPackDesc:
+RoomServiceDesc:
+BlundrPolicyDesc:
+ThroatSprayDesc:
+HeavyBootsDesc:
+UtilUmbrellaDesc:
+MintDesc:
 	db   "?@"
+
+
+BicycleDesc:
+	db   "A collapsible bike"
+	next "for fast movement.@"
+
+OldRodDesc:
+	db   "Use by water to"
+	next "fish for #mon.@"
+
+GoodRodDesc:
+	db   "A good Rod for"
+	next "catching #mon.@"
+
+SuperRodDesc:
+	db   "The best Rod for"
+	next "catching #mon.@"
+
+CoinCaseDesc:
+	db   "Holds up to 50K"
+	next "game coins.@"
+
+ItemfinderDesc:
+	db   "Checks for unseen"
+	next "items in the area.@"
+
+MysteryEggDesc:
+	db   "An Egg obtained"
+	next "from Mr.#mon.@"
+
+SquirtBottleDesc:
+	db   "A bottle used for"
+	next "watering plants.@"
+
+SecretPotionDesc:
+	db   "Fully heals any"
+	next "#mon.@"
+
+RedScaleDesc:
+	db   "A scale from the"
+	next "red Gyarados.@"
+
+CardKeyDesc:
+	db   "Opens shutters in"
+	next "the Radio Tower.@"
+
+BasementKeyDesc:
+	db   "Opens doors.@"
+
+SSTicketDesc:
+	db   "A ticket for the"
+	next "S.S.Aqua.@"
+
+PassDesc:
+	db   "A ticket for the"
+	next "Magnet Train.@"
+
+MachinePartDesc:
+	db   "A machine part for"
+	next "the Power Plant.@"
+
+LostItemDesc:
+	db   "The # Doll lost"
+	next "by the Copycat.@"
+
+RainbowWingDesc:
+	db   "A mystical feather"
+	next "of rainbow colors.@"
+
+SilverWingDesc:
+	db   "A strange, silver-"
+	next "colored feather.@"
+
+ClearBellDesc:
+	db   "Makes a gentle"
+	next "ringing.@"
+
+GSBallDesc:
+	db   "The mysterious"
+	next "Ball.@"
+
+BlueCardDesc:
+	db   "Card to save"
+	next "points.@"
+
+OrangeTicketDesc:
+MysticTicketDesc:
+	db   "A ticket for the"
+	next "Seagallop Ferry.@"
+
+OldSeaMapDesc:
+	db   "A faded sea chart"
+	next "of a small island.@"
+
+ShinyCharmDesc:
+	db   "A charm for find-"
+	next "ing shiny #mon.@"
+
+OvalCharmDesc:
+	db   "A charm for find-"
+	next "ing Eggs.@"
+
+CatchCharmDesc:
+	db   "A charm for catch-"
+	next "ing #mon.@"
+
+SilphScope2Desc:
+	db   "A scope to see in-"
+	next "visible #mon.@"
+
+ApricornBoxDesc:
+	db   "Holds up to 99 of"
+	next "each Apricorn.@"
