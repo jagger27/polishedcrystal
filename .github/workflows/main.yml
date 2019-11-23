@@ -20,6 +20,13 @@ jobs:
     - name: Build project # This would actually build your project, using zip for an example artifact
       run: |
         make
+    - name: Delete old nightly build
+      id: delete_release
+      uses: jagger27/delete-release@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: nightly 
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1.0.0
@@ -27,7 +34,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: nightly
-        release_name: Nightly (${{ github.committed_at }})
+        release_name: Polished Crystal 3.0.0 Nightly
         draft: false
         prerelease: true
     - name: Upload Release Asset
